@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Graphic/Arrow-Right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12.025787,13.407283 L0.732893753,24.7001762 C0.342369461,25.0907005 0.342369461,25.7238655 0.732893753,26.1143898 C1.12341804,26.5049141 1.75658302,26.5049141 2.14710732,26.1143898 L14.1471073,14.1143898 C14.5376316,13.7238655 14.5376316,13.0907005 14.1471073,12.7001762 L2.14710732,0.700176241 C1.75658302,0.30965195 1.12341804,0.30965195 0.732893753,0.700176241 C0.342369461,1.09070053 0.342369461,1.72386551 0.732893753,2.1143898 L12.025787,13.407283 Z" id="path-1"></path>
+        <filter x="-7.1%" y="-3.8%" width="114.3%" height="107.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/Graphic/Arrow-Right">
+            <g id="Icon" transform="translate(18.000000, 11.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask" fill-rule="nonzero">
+                    <use fill="#EFEFEF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
