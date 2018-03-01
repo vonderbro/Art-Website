@@ -1,1 +1,5 @@
 RB_Art_Website.sketch
+node_modules
+package-lock.json
+package.json
+gulpfile.js
