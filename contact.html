@@ -51,7 +51,15 @@
 
   <!-- Navigation
   ================================================== -->
-  <div class="navigation">
+  <button class="hamburger hamburger--collapse" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+  <!-- Slide Menu
+  ================================================== -->
+  <div class="navigation animated fadeIn">
       <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="contact.html">CONTACT</a></li>
@@ -60,6 +68,14 @@
       </ul>
   </div>
 
+  <div class="slide-menu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="https://society6.com/ryanbreault">SHOP</a></li>
+      </ul>
+  </div>
 
 
   <!-- Form
@@ -114,7 +130,23 @@
 
   </footer>
 
-
+  <!-- Hamburger Menu
+  ================================================== -->
+    <script>
+      // Look for .hamburger
+      var hamburger = document.querySelector(".hamburger");
+      var slideMenu = document.querySelector(".slide-menu");
+      var inner = hamburger.querySelector(".hamburger-inner")
+      // On click
+      hamburger.addEventListener("click", function() {
+        // Toggle class "is-active"
+        hamburger.classList.toggle("is-active");
+        hamburger.classList.toggle("hamburger-dark");
+        slideMenu.classList.toggle("display-inline");
+        inner.classList.toggle("white")
+        // Do something else, like open/close menu
+      });
+    </script>
 
 
 
