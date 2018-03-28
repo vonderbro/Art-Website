@@ -186,10 +186,15 @@
     <script>
       // Look for .hamburger
       var hamburger = document.querySelector(".hamburger");
+      var slideMenu = document.querySelector(".slide-menu");
+      var inner = hamburger.querySelector(".hamburger-inner")
       // On click
       hamburger.addEventListener("click", function() {
         // Toggle class "is-active"
         hamburger.classList.toggle("is-active");
+        hamburger.classList.toggle("hamburger-dark");
+        slideMenu.classList.toggle("display-inline");
+        inner.classList.toggle("white")
         // Do something else, like open/close menu
       });
     </script>
