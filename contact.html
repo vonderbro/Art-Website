@@ -21,9 +21,9 @@
 
     <!-- Stylesheet
     ================================================== -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- Font Awesome
     ================================================== -->
     <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
@@ -82,31 +82,30 @@
   ================================================== -->
 
 
-  <section class="animated fadeInRight">
+<section class="animated fadeInRight">
 
-          <div class="contact-container">
-            <h1 style="text-align:center">Contact</h1>
-              <form action="/action_page.php">
+  <div class="contact-container">
+    <h1 style="text-align:center">Contact</h1>
+      <div id="contact-area">
 
-                <label for="fname">First Name</label>
-                <input type="text" autocomplete="off" id="fname" name="firstname" placeholder="Name">
+          <form method="post" action="contactengine.php">
+            <label for="Name"></label>
+            <input type="text" name="Name" id="Name" placeholder="Name" />
 
-                <label for="email">Email</label>
-                <input type="text" autocomplete="off" id="email" name="email" placeholder="Email" required data-validation-required-message="Please enter your email.">
+            <label for="Email"></label>
+            <input type="text" name="Email" id="Email" placeholder="Email" />
 
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required data-validation-required-message="Please enter a message."></textarea>
+            <label for="Message"></label><br/>
+            <textarea name="Message" placeholder="Write something..." rows="15" cols="20" id="Message"></textarea>
 
-                <div class="center-action">
-                  <button type="button" class="primary">Send Message</button>
-                </div>
+            <button type="submit" name="submit" value="Submit" class="primary contactButton">submit</button>
+          </form>
 
-              </form>
-          </div>
+      </div>
 
-        </div>
+  </div>
 
-  </section>
+</section>
 
 
 
@@ -148,6 +147,6 @@
       });
     </script>
 
+  </body>
 
-
-</body>
+</html>

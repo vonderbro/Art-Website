@@ -152,7 +152,6 @@ p {
   background-color: white;
   border: 0;
   margin: 0;
-  overflow: visible;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -164,12 +163,13 @@ p {
   box-shadow: 0px 2px 8px -2px rgba(0,0,0,0.2);}
 
   .hamburger:hover {
-    opacity: 0.7; }
+    opacity: 0.7;
+	 }
 
 .hamburger-box {
   width: 40px;
   height: 40px;
-  display: inline-block;
+  display: block;
   position: absolute;
   left: 12px;
   top: 8px;}
@@ -242,8 +242,6 @@ p {
 .gallery-image {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.05);
   border: solid 16px rgb(255, 255, 255);
-  border-left: solid 32px rgb(255, 255, 255);
-  border-right: solid 32px rgb(255, 255, 255);
   max-height: 100%;
   margin-bottom: 24px;
 }
@@ -286,7 +284,7 @@ li a {
     display: block;
     color: #94918F;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -313,18 +311,15 @@ li a:hover {
 
 .float-left {
   position: absolute;
-  top: 200px;
-  left: 0%;
+  top: 50%;
+  left: 16px;
 }
 
 .float-right {
   position: absolute;
-  top: 200px;
-  right: 0%;
+  top: 50%;
+  right: 16px;
 }
-
-
-
 
 
 
@@ -369,11 +364,15 @@ footer {
   margin: auto;
 }
 
+.topMargin {
+	margin-top: 24px;
+}
+
 /*Forms*/
 
-label{
+/*label{
   display: none;
-}
+}*/
 
 input[type=text], select, textarea {
     width: 100%;
@@ -453,7 +452,7 @@ textarea:focus {
 
 .contact-container {
   max-width: 550px;
-  margin: auto;
+  margin: 80px auto;
   margin-bottom: 128px;
 }
 
@@ -496,6 +495,10 @@ button {
   opacity: 50%;
 }
 
+.contactButton{
+	margin: 0 auto;
+	display: block;
+}
 
 button:hover {
     -webkit-box-shadow: 0px 16px 24px -16px rgba(0,0,0,0.3);
@@ -522,6 +525,16 @@ button:active {
   margin: 0 auto;
   max-width: 1440px;
   margin:auto;
+}
+
+.containerGallery {
+	margin: auto 64px;
+
+}
+
+
+.gallery {
+	padding: 0px 24px;
 }
 
 
@@ -578,6 +591,8 @@ box-shadow: 0px 24px 24px -16px rgba(0,0,0,0.5);
         padding: 8px 24px;
     }
 
+
+
   .grid {
     display: flex;
     flex-wrap: wrap;
@@ -614,10 +629,6 @@ box-shadow: 0px 24px 24px -16px rgba(0,0,0,0.5);
   .logo {
     margin-bottom: 24px;}
 
-  .details-half-page {
-    width: 50%;
-    padding: 24px;}
-
 
   .cell {
     width: 50%;}
@@ -631,7 +642,7 @@ box-shadow: 0px 24px 24px -16px rgba(0,0,0,0.5);
 
   .details-half-page {
     width: 100%;
-    padding: 16px;}
+	}
 
   .cell {
     width: 100%;}
@@ -643,6 +654,7 @@ box-shadow: 0px 24px 24px -16px rgba(0,0,0,0.5);
 
 /* Responsive layout - 1 column */
 @media (max-width: 600px) {
+
 
     h1 {
       margin-top: -8px;
@@ -665,16 +677,18 @@ box-shadow: 0px 24px 24px -16px rgba(0,0,0,0.5);
   } */
 
   .float-left {
-    position: absolute;
-    top: 45%;
-    left: 0%;
+		top: 240px;
+    left: 16px;
   }
 
   .float-right {
-    position: absolute;
-    top: 45%;
-    right: 0%;
+		top: 240px;
+    right: 16px
   }
+
+	.topMargin {
+		margin-top: 0px;
+	}
 
   .hamburger {
     display: inline-block;
@@ -684,4 +698,23 @@ box-shadow: 0px 24px 24px -16px rgba(0,0,0,0.5);
 		width: 100%;
 	}
 
+}
+
+/* Responsive layout - 1 column */
+@media (max-width: 400px) {
+
+	.details-half-page {
+	    padding: 0px;
+			margin-top: 24px;
+		}
+
+	.float-left {
+		top: 160px;
+		left: 8px;
+	}
+
+	.float-right {
+		top: 160px;
+		right: 8px
+	}
 }
