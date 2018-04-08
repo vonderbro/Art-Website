@@ -1,0 +1,145 @@
+
+.splashMargin{
+	margin: 0 24px;
+
+}
+
+.typographyContainer {
+		position: absolute;
+		width: 100%;
+		top: 35%;
+		left: 0;
+    right: 0;
+
+}
+
+.typography {
+	margin: auto;
+	max-width: 960px;
+}
+
+.figure {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 960px;
+	height: 960px;
+	margin-top: -480px; /* Half the height */
+	margin-left: -480px;
+}
+
+
+.buttonContainer{
+	position: absolute;
+	width: 100%;
+	top: 20%;
+	left: 0;
+	right: 0;
+	z-index: 20;
+}
+
+.uxPortfolio {
+float: left;
+margin-left: 10%;
+}
+
+.artPortfolio {
+float: right;
+margin-right: 10%;
+}
+
+/* Media Queries */
+@media (max-width: 3000px) {
+
+	}
+
+
+@media (max-width: 1440px) {
+
+	.figure {
+		width: 760px;
+		height: 760px;
+		margin-top: -380px; /* Half the height */
+		margin-left: -380px;
+	}
+}
+
+@media (max-width: 1024px) {
+
+	.typographyContainer {
+			top: 320px;
+	}
+
+}
+
+@media (max-width: 960px) {
+
+
+	.uxPortfolio {
+		float: none;
+		width: 320px;
+		margin: 0px auto;
+	}
+
+	.artPortfolio {
+		float: none;
+		width: 320px;
+		margin: 0px auto;
+	}
+
+	.buttonContainer{
+		position: absolute;
+		width: 100%;
+		top: 80%;
+		bottom: 20%;
+		left: 0;
+		right: 0;
+		z-index: 20;
+	}
+}
+
+@media (max-width: 750px) {
+
+	.typographyContainer {
+			top: 35%;
+	}
+
+	.figure {
+		width: 500px;
+		height: 500px;
+		margin-top: -350px; /* Half the height */
+		margin-left: -250px;
+	}
+
+}
+
+
+	/*.typographyContainer {
+			top: 250px;
+			margin-left:-10px
+	}*/
+}
+
+@media (max-width: 600px) {
+
+	.typographyContainer {
+			top: 20%;
+	}
+
+}
+
+@media (max-width: 400px) {
+
+	.typographyContainer {
+			top: 20%;
+	}
+
+	.figure {
+		width: 400px;
+		height: 400px;
+		margin-top: -200px; /* Half the height */
+		margin-left: -200px;
+	}
+
+
+	}

@@ -18,7 +18,7 @@
 
 		<h1>Your message has been sent!</h1><br />
 
-		<p><a href="index.html">Back to Site</a></p>
+		<p><a href="art-portfolio.html">Back to Site</a></p>
 
 	</div>
 
