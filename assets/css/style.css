@@ -393,6 +393,7 @@ footer {
 .footer-copy {
   width: 400px;
   margin: auto;
+	margin-bottom: 24px;
 }
 
 .topMargin {
@@ -629,6 +630,7 @@ box-shadow: 0px 24px 24px -16px rgba(0,0,0,0.5);
     flex-wrap: wrap;
     flex-direction: row;
     margin-bottom: 64px;
+		margin-top: 32px;
   }
 
   .cell {
