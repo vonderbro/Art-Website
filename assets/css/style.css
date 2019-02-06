@@ -570,6 +570,23 @@ button:active {
 }
 
 
+
+/*Series Tumbnails*/
+
+.w3-col.s4 {
+    width: 20%;
+    float: left;
+    padding: 8px;
+}
+
+.w3-opacity, .w3-hover-opacity:hover {
+    opacity: 0.60;
+}
+
+.w3-opacity-off, .w3-hover-opacity-off:hover {
+    opacity: 1;
+}
+
 /*Image*/
 
 img {
